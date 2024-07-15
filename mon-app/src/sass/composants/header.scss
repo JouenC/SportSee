@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    height: 91px;
+    @include navMenu;
+    // z-index: 1;
+
+    &__logo {
+        width: 178px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        &__accueil,  &__profil, &__reglages, &__communaute {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            padding-right: 60px;
+        }
+  }
+}
