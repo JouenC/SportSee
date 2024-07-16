@@ -5,7 +5,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 // pages and components
 import Header from "./components/Header";
 import Home from "./pages/Home";
-// import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 // import Error from "./pages/Error";
 // import User from "./pages/User";
 
@@ -17,7 +17,7 @@ export default function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
-        {/* <NavBar /> */}
+        <NavBar />
         <Routes>
             <Route index element={<Home />} />
             <Route path="/" element={<Home />} />

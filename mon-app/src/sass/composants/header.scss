@@ -1,10 +1,11 @@
-.navbar {
+.navhead {
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
     height: 91px;
     @include navMenu;
-    // z-index: 1;
+    position: relative;
+    z-index: 1;
 
     &__logo {
         width: 178px;

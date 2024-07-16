@@ -1,0 +1,30 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 117px;
+    height: 1024px;
+    @include navMenu;
+    
+    &__nav {
+        position: absolute;
+        top: 165px;
+        left: 25px;
+
+        &__link {
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__footer {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: 25px;
+        left: 45px;
+        font-size: 12px;
+        color: white;
+        
+    }
+}
