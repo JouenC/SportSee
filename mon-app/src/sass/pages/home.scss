@@ -4,15 +4,24 @@ body {
 
 .users {
     display: flex;
-    flex-direction: column;
+    flex: 1;
+    // flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+    // position: absolute;
+    // bottom: 240px;
+    // left: 630px;
+    border: 1px solid black;
 
     &__title {
         font-size: 60px;
     }
 
     &__select {
-        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
         text-decoration: none;
         color: red;
         font-size: 40px;

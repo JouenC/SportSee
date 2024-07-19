@@ -1,9 +1,9 @@
 .slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     width: 117px;
-    height: 1024px;
+    // height: 1024px;
     @include navMenu;
     
     &__nav {
