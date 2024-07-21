@@ -1,6 +1,5 @@
 /**Render the userName
 * @param {string} name
-* @return {JSX}
 */
 
 
