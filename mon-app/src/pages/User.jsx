@@ -8,6 +8,7 @@ import getData from '../data/getData'
 // composant
 import UserName from '../components/UserName'
 import BarCharts from "../components/BarChart";
+import UserAverageSession from "../components/UserAverageSession";
 
 function User () {
     const [data, setData] = useState(null);
@@ -21,13 +22,13 @@ function User () {
     };
     fetchData();
   }, [id]);
-  console.log(data)
   if (!data) return null;
 
   return (
     <div>
       <UserName name={data.userInfos.firstName} />
       <BarCharts />
+      <UserAverageSession />
     </div>
   );
 }

@@ -8,7 +8,7 @@ import {BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip, ResponsiveContainer} fro
 // datas
 import getData from '../data/getData'
 
-
+// component
 import ActivityTool from './ActivityTool';
 
 /**
@@ -29,7 +29,6 @@ function BarCharts() {
 	}, [id]);
     
 	if (!data) return null;
-    console.log(data)
     
 	//format data.day
 	for (let i = 0 ; i < data.length ; i ++)
