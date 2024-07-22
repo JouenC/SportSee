@@ -9,6 +9,7 @@ import getData from '../data/getData'
 import UserName from '../components/UserName'
 import BarCharts from "../components/BarChart";
 import UserAverageSession from "../components/UserAverageSession";
+import UserPerformance from "../components/UserPerformance";
 
 function User () {
     const [data, setData] = useState(null);
@@ -27,8 +28,13 @@ function User () {
   return (
     <div>
       <UserName name={data.userInfos.firstName} />
-      <BarCharts />
-      <UserAverageSession />
+      
+        <BarCharts />
+        <UserAverageSession />
+        <UserPerformance />
+          
+        
+      
     </div>
   );
 }
