@@ -1,0 +1,12 @@
+.userScore {
+  position: relative;
+  width: 258px;
+  height: 263px;
+  background: #FBFBFB;
+  border-radius: 5px;
+}
+.userScore__text {
+  position: relative;
+  bottom: 150px;
+  left: 100px;
+}/*# sourceMappingURL=userScore.css.map */

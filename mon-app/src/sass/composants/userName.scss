@@ -1,0 +1,9 @@
+.userName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__span {
+        color: $secondary-color;
+    }
+}

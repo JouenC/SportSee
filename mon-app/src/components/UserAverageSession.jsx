@@ -45,7 +45,6 @@ function UserAverageSessions() {
         }
       });
       setData(formatData);
-      console.log(formatData)
     };
     fetchData();
   }, [id]);

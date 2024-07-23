@@ -30,6 +30,13 @@ body {
   font-size: 40px;
 }
 
+.user {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+}
+
 .navhead {
   display: flex;
   justify-content: space-between;
@@ -76,6 +83,15 @@ body {
   color: white;
 }
 
+.userName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userName__span {
+  color: red;
+}
+
 .app__layout {
   display: flex;
   width: 100%;
@@ -108,4 +124,44 @@ body {
   background: #282D30;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
   border-radius: 5px;
+}
+
+.userScore {
+  position: relative;
+  width: 258px;
+  height: 263px;
+  background: #FBFBFB;
+  border-radius: 5px;
+}
+.userScore__text {
+  position: relative;
+  bottom: 150px;
+  left: 100px;
+}
+
+.cardInfo {
+  display: flex;
+  padding: 2em;
+  width: 258px;
+  height: 124px;
+  background: #FBFBFB;
+  border-radius: 5px;
+}
+.cardInfo__detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+.cardInfo__detail__info {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #282D30;
+  margin-bottom: 2px;
+}
+.cardInfo__detail__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #74798C;
 }/*# sourceMappingURL=main.css.map */
