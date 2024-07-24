@@ -1,10 +1,15 @@
 .cardInfo {
   display: flex;
-  padding: 2em;
+  justify-content: space-around;
+  align-items: center;
   width: 258px;
   height: 124px;
   background: #FBFBFB;
   border-radius: 5px;
+  margin: 0 0 54px 25px;
+}
+.cardInfo__img {
+  width: 60px;
 }
 .cardInfo__detail {
   display: flex;

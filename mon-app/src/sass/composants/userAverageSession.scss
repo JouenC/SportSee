@@ -1,4 +1,4 @@
-.responsiveContainer {
+.userAverageSession {
   position: relative;
   width: 258px;
   height: 263px;
@@ -11,9 +11,9 @@
 
     &__title {
         position: absolute;
-  font-weight: 500;
-  font-size: 15px;
-  padding: 29px 34px 0 34px;
-  color: rgba(255, 255, 255, 0.7);
+        font-weight: 500;
+        font-size: 15px;
+        padding: 29px 34px 0 34px;
+        color:#ffffff;
     }
 }

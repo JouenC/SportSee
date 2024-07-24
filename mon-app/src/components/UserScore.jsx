@@ -18,8 +18,8 @@ import { ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 
   return (
     <div className="userScore">
-      <h3>Score</h3>
-      <ResponsiveContainer width="100%" height="100%">
+      <h2 className="userScore__title">Score</h2>
+      <ResponsiveContainer width="100%" height="100%" className="userScore__container">
         <PieChart>
           <Pie
             data={score}
@@ -39,10 +39,10 @@ import { ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
         </PieChart>
       </ResponsiveContainer>
       <div className="userScore__text">
-        <div>
+        <div className="userScore__text__pourcent">
             {score[0].value * 100}%
         </div>
-        <div>
+        <div className="userScore__text__br">
             de votre <br /> objectif
         </div>    
       </div>

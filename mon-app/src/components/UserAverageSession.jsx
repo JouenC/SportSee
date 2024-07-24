@@ -51,10 +51,9 @@ function UserAverageSessions() {
   if (!data) return null;
 
   return (
-
-      
-      <ResponsiveContainer width="100%" height="100%" className="responsiveContainer">
-        <h3 className="responsiveContainer__title">Durée moyenne des sessions</h3>  
+    <div className="userAverageSession">
+      <ResponsiveContainer width="100%" height="100%">
+        <h2 className="userAverageSession__title">Durée moyenne des sessions</h2>  
         <LineChart data={data} strokeWidth={1} 
             //  onMouseMove={(e) => {
             //     if (e.isTooltipActive === true) {
@@ -92,31 +91,7 @@ function UserAverageSessions() {
           />
         </LineChart>
       </ResponsiveContainer>
-
-
-
-    
-      
-      // <ResponsiveContainer width="100%" height="100%">
-      //   <LineChart
-      //     width={500}
-      //     height={300}
-      //     data={data}
-      //     margin={{
-      //       top: 5,
-      //       right: 30,
-      //       left: 20,
-      //       bottom: 5,
-      //     }}
-      //   >
-      //     <XAxis dataKey="day" />
-      //     <YAxis dataKey="sessionLength"/>
-      //     <Tooltip content={<SessionTool />} />
-      //     <Line type="monotone" dataKey="sessionLength" stroke="#8884d8" activeDot={{ r: 8 }} />
-      //     <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-      //   </LineChart>
-      // </ResponsiveContainer>
-    
+    </div>  
   );
 };
 

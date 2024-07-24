@@ -4,8 +4,8 @@ function SessionsTool({ active, payload }) {
     
   if (active) {
     return (
-      <div>
-        <div>{payload[0].value}min</div>
+      <div className="sessionsTool">
+        <div className="sessionsTool__time">{payload[0].value}min</div>
       </div>
     );
   }

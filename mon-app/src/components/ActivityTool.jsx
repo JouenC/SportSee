@@ -9,9 +9,9 @@ import PropTypes from 'prop-types';
  function ActivityTool({active, payload}) {
     if (active){
     return (
-        <div>
-            <div>{payload[0].value}kg</div>
-            <div>{payload[1].value}Kcal</div>
+        <div className='activityTool'>
+            <div className='activityTool__detail'>{payload[0].value}kg</div>
+            <div className='activityTool__detail'>{payload[1].value}Kcal</div>
         </div>
     
      );

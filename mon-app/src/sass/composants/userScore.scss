@@ -1,13 +1,49 @@
 .userScore {
-    position: relative;
     width: 258px;
     height: 263px;
     background: #FBFBFB;
     border-radius: 5px;
 
-    &__text {
+    &__title {
         position: relative;
-        bottom: 150px;
-        left: 100px;
+        left: 25px;
+        top: 10px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        color: #20253a;
+        font-weight: 700;
+    }
+
+    &__container {
+        position: relative;
+        bottom: 25px;
+    }
+
+    &__text {
+        width: 140px;
+        height: 140px;
+        position: relative;
+        bottom: 230px;
+        left: 60px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        z-index: 2;
+
+        &__pourcent {
+            position: relative;
+            left: 45px;
+            top: 30px;
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: 700;
+            font-size: 26px;
+        }
+
+        &__br {
+            position: relative;
+            left: 45px;
+            top: 30px;
+            color: #74798C;
+        }
     }
 }

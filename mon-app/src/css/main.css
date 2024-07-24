@@ -36,6 +36,18 @@ body {
   flex-direction: column;
   height: 100%;
 }
+.user__performances {
+  display: flex;
+  justify-content: space-between;
+  width: 885px;
+}
+.user__cardInfo {
+  height: 780px;
+}
+
+.flex-element {
+  display: flex;
+}
 
 .navhead {
   display: flex;
@@ -87,9 +99,70 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
 }
 .userName__span {
   color: red;
+}
+
+.barChart {
+  margin-bottom: 25px;
+  height: 320px;
+  width: 835px;
+  border-radius: 5px;
+  background: #FBFBFB;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  padding: 25px;
+}
+.barChart__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-right: 25px;
+}
+.barChart__header__title {
+  font-size: 15px;
+  line-height: 24px;
+  color: #20253A;
+}
+.barChart__header__legend {
+  display: flex;
+  align-items: center;
+}
+.barChart__header__legend__info {
+  display: flex;
+  padding-left: 25px;
+}
+.barChart__header__legend__info__icon {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.poids-circle {
+  background-color: #282D30;
+}
+
+.calories-circle {
+  background-color: #E60000;
+}
+
+.activityTool {
+  background-color: #E60000;
+  width: 55px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.activityTool__detail {
+  color: white;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  margin-top: 7px;
 }
 
 .app__layout {
@@ -98,7 +171,7 @@ body {
   height: 90vh;
 }
 
-.responsiveContainer {
+.userAverageSession {
   position: relative;
   width: 258px;
   height: 263px;
@@ -109,12 +182,28 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
   border-radius: 5px;
 }
-.responsiveContainer__title {
+.userAverageSession__title {
   position: absolute;
   font-weight: 500;
   font-size: 15px;
   padding: 29px 34px 0 34px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+}
+
+.sessionsTool {
+  background-color: white;
+  width: 45px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sessionsTool__time {
+  color: black;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  margin-top: 4px;
 }
 
 .userPerformance {
@@ -127,25 +216,62 @@ body {
 }
 
 .userScore {
-  position: relative;
   width: 258px;
   height: 263px;
   background: #FBFBFB;
   border-radius: 5px;
 }
-.userScore__text {
+.userScore__title {
   position: relative;
-  bottom: 150px;
-  left: 100px;
+  left: 25px;
+  top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #20253a;
+  font-weight: 700;
+}
+.userScore__container {
+  position: relative;
+  bottom: 25px;
+}
+.userScore__text {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  bottom: 230px;
+  left: 60px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  z-index: 2;
+}
+.userScore__text__pourcent {
+  position: relative;
+  left: 45px;
+  top: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  font-size: 26px;
+}
+.userScore__text__br {
+  position: relative;
+  left: 45px;
+  top: 30px;
+  color: #74798C;
 }
 
 .cardInfo {
   display: flex;
-  padding: 2em;
+  justify-content: space-around;
+  align-items: center;
   width: 258px;
   height: 124px;
   background: #FBFBFB;
   border-radius: 5px;
+  margin: 0 0 54px 25px;
+}
+.cardInfo__img {
+  width: 60px;
 }
 .cardInfo__detail {
   display: flex;

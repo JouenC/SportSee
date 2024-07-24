@@ -3,4 +3,18 @@
     flex: 1;
     flex-direction: column;
     height: 100%;
+
+    &__performances {
+        display: flex;
+        justify-content: space-between;
+        width: 885px;
+    }
+
+    &__cardInfo {
+        height: 780px;
+    }
+}
+
+.flex-element {
+    display: flex;
 }

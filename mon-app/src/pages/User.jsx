@@ -36,14 +36,16 @@ function User () {
   return (
     <div className="user">
       <UserName name={data.userInfos.firstName} />
-      {/* <section> */}
-        <BarCharts />
-        {/* <article> */}
-          <UserAverageSession />
-          <UserPerformance />
-          <UserScore data={data} />
-        {/* </article> */}
-        <aside>
+      <section className="flex-element">
+        <div>
+          <BarCharts />
+          <article className="user__performances">
+            <UserAverageSession />
+            <UserPerformance />
+            <UserScore data={data} />
+          </article>
+        </div>
+        <aside className="user__cardInfo">
           <CardInfo
             icon={calories}
             info={`${data.keyData.calorieCount}kCal`}
@@ -65,7 +67,7 @@ function User () {
             text="Lipides"
           />
         </aside>
-      {/* </section> */} 
+      </section> 
     </div>
   );
 }

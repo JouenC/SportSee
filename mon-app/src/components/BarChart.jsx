@@ -35,16 +35,16 @@ function BarCharts() {
         {data[i].day = i + 1;}
     
     return (  
-        <div>
-            <div>
-                <div>Activité quotidienne</div>
-                <div>
-					<div>
-						<div color='#282D30' />
+        <div className='barChart'>
+            <div className='barChart__header'>
+                <h2 className='barChart__header__title'>Activité quotidienne</h2>
+                <div className='barChart__header__legend'>
+					<div className='barChart__header__legend__info'>
+						<div className='barChart__header__legend__info__icon poids-circle' />
 						<div>Poids (kg)</div>
 					</div>
-					<div>
-						<div color='#E60000' />
+					<div className='barChart__header__legend__info'>
+						<div className='barChart__header__legend__info__icon calories-circle' />
 						<div>Calories brûlées (kCal)</div>
 					</div>
 				</div>

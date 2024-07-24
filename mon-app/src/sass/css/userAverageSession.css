@@ -1,4 +1,4 @@
-.responsiveContainer {
+.userAverageSession {
   position: relative;
   width: 258px;
   height: 263px;
@@ -9,10 +9,10 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
   border-radius: 5px;
 }
-.responsiveContainer__title {
+.userAverageSession__title {
   position: absolute;
   font-weight: 500;
   font-size: 15px;
   padding: 29px 34px 0 34px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
 }/*# sourceMappingURL=userAverageSession.css.map */
