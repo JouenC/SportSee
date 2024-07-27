@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 
 // data
-import getData from '../data/getData'
+import getData from '../data/getData';
+// import getData from "../data/APICall";
 
 // composant
-import UserName from '../components/UserName'
+import UserName from '../components/UserName';
 import BarCharts from "../components/BarChart";
 import UserAverageSession from "../components/UserAverageSession";
 import UserPerformance from "../components/UserPerformance";
