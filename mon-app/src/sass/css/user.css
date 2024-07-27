@@ -3,6 +3,7 @@
   flex: 1;
   flex-direction: column;
   height: 100%;
+  align-items: center;
 }
 .user__performances {
   display: flex;

@@ -3,7 +3,8 @@ body {
   margin: 0%;
   font-family: "Roboto", "Serif", sans-serif;
   min-width: 1240px;
-  min-height: 780px;
+  height: 1024px;
+  overflow: hidden;
 }
 
 body {
@@ -16,7 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  border: 1px solid black;
 }
 .users__title {
   font-size: 60px;
@@ -35,6 +35,7 @@ body {
   flex: 1;
   flex-direction: column;
   height: 100%;
+  align-items: center;
 }
 .user__performances {
   display: flex;
@@ -47,6 +48,19 @@ body {
 
 .flex-element {
   display: flex;
+}
+
+.error {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.error__number {
+  color: red;
+  font-size: 150px;
 }
 
 .navhead {
@@ -98,11 +112,23 @@ body {
 .userName {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 25px;
+  position: relative;
+  right: 375px;
 }
 .userName__span {
   color: red;
+}
+.userName__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.userName__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .barChart {
@@ -188,6 +214,7 @@ body {
   font-size: 15px;
   padding: 29px 34px 0 34px;
   color: #ffffff;
+  z-index: 2;
 }
 
 .sessionsTool {

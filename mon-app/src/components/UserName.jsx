@@ -9,8 +9,8 @@ import text from "../data/text.json"
 function UserName ({name}) {
     return (
         <div className="userName">
-            <h1>Bonjour <span className="userName__span">{name}</span></h1>
-            <div>{text.congratulation}</div>
+            <h1 className="userName__title">Bonjour <span className="userName__span">{name}</span></h1>
+            <div className="userName__text">{text.congratulation}</div>
         </div>    
     )
 }

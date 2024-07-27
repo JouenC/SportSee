@@ -19,6 +19,9 @@ function UserAverageSessions() {
   const [data, setData] = useState(null);
   const { id } = useParams();
 
+  // const [width, setWidth] = useState(0);
+
+
   useEffect(() => {
     const fetchData = async () => {
         const request = await getData("USER_AVERAGE_SESSIONS",id);
@@ -55,18 +58,28 @@ function UserAverageSessions() {
       <ResponsiveContainer width="100%" height="100%">
         <h2 className="userAverageSession__title">Durée moyenne des sessions</h2>  
         <LineChart data={data} strokeWidth={1} 
-            //  onMouseMove={(e) => {
-            //     if (e.isTooltipActive === true) {
-            //       let div = document.querySelector('.bUPtxZ')
-            //       let windowWidth = div.clientWidth
-            //       let mouseXpercentage = Math.round(
-            //         (e.activeCoordinate.x / windowWidth) * 100
-            //       )
-            //       // @ts-ignore
-            //       div.style.background = `linear-gradient(90deg, rgba(255,0,0,1) ${mouseXpercentage}%, rgba(175,0,0,1.5) ${mouseXpercentage}%, rgba(175,0,0,1.5) 100%)`
-            //     }
-            //   }}
+        
+             onMouseMove={(e) => {
+              // console.log(e)
+              // setWidth(e.chartX)
+                if (e.isTooltipActive === true) {
+                  let div = document.querySelectorAll('.recharts-surface')
+                  if(div.length < 1) return null
+                  
+                  let secondDiv = div[1]
+                  let windowWidth = secondDiv.clientWidth
+                  let mouseXpercentage = Math.round(
+                  (e.activeCoordinate.x / windowWidth) * 100
+                  )
+                   // @ts-ignore
+                   secondDiv.style.background = `linear-gradient(90deg, rgba(255,0,0,1) ${mouseXpercentage}%, rgba(175,0,0,1.5) ${mouseXpercentage}%, rgba(175,0,0,1.5) 100%)`
+                  
+                  
+                 
+                }
+              }}
         >
+          {/* <CartesianGrid strokeDasharray="3 3" fill="#ccc" width={width}/> */}
           <XAxis
             type="category"
             dataKey="day"

@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import User from './pages/User'
-// import Error from "./pages/Error";
+import Error from "./pages/Error";
 
 // style
 import './css/main.css'
@@ -23,6 +23,7 @@ export default function App() {
               <Route index element={<Home />} />
               <Route path="/" element={<Home />} />
               <Route path="/user/:id" element={<User />} />
+              <Route path="*" element={<Error />} />
           </Routes>
         </div>
     </BrowserRouter>
