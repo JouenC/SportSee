@@ -4,7 +4,6 @@ import { useParams } from "react-router";
 
 // data
 import getData from '../data/getData';
-// import getData from "../data/APICall";
 
 // composant
 import UserName from '../components/UserName';
