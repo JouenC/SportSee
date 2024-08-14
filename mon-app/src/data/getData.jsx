@@ -65,8 +65,8 @@
 // 	}
 // };
 
-// import {getUserInfos, getUserActivity, getUserAverageSessions, getUserPerformance} from "./apiCall"
-import {getUserInfos, getUserActivity, getUserAverageSessions, getUserPerformance} from "./dataMockedCall"
+import {getUserInfos, getUserActivity, getUserAverageSessions, getUserPerformance} from "./apiCall"
+// import {getUserInfos, getUserActivity, getUserAverageSessions, getUserPerformance} from "./dataMockedCall"
 
 
  /**

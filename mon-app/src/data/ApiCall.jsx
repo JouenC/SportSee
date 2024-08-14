@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:3000';
+const baseURL = 'http://localhost:3001';
 
 /**
  * Get user infos
@@ -10,11 +10,13 @@ const baseURL = 'http://localhost:3000';
 const getUserInfos = async (id) => {
 	try {
 		const response = await fetch(`${baseURL}/user/${id}`);
+		console.log(response)
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
 		const data = await response.json();
-		return { data };
+		console.log(data)
+		return data;
 	} catch (e) {
 		console.log(e);
 	}
@@ -33,7 +35,7 @@ const getUserActivity = async (id) => {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
 		const data = await response.json();
-		return { data };
+		return data;
 	} catch (e) {
 		console.log(e);
 	}
@@ -52,7 +54,7 @@ const getUserAverageSessions = async (id) => {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
 		const data = await response.json();
-		return { data };
+		return data;
 	} catch (e) {
 		console.log(e);
 	}
@@ -71,7 +73,7 @@ const getUserPerformance = async (id) => {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
 		const data = await response.json();
-		return { data };
+		return data;
 	} catch (e) {
 		console.log(e);
 	}
