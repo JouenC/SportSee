@@ -1,96 +1,30 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-
 Prérequis
 
     NodeJS
     npm
-    yarn
 
-Installer et exécuter le projet
-Installation et lancement du _back-end_
+Installation et lancement du back-end
 
-    Cloner le repo du back-end : git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git
-    En se plaçant dans ce repo du back-end, installer ses dépendances : yarn
-    Lancer le back-end sur le port 3000 (port par défaut) : yarn dev
+Cloner le repo du back-end de SportSee :
+git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git
 
-Installation et lancement du _front-end_
+En se plaçant dans ce repo du back-end, installer ses dépendances :
+npm install
 
-    Cloner le présent repo du front-end: git clone https://github.com/GuillaumeSere/guillaumesere_12_06042022.git
-    En se plaçant dans ce repo du front-end, installer ses dépendances : npm install
-    Lancer le front-end sur le port 3001 : npm start
+Lancer le back-end sur le port 3000 (port par défaut) :
+npm run start
 
-Les 2 URL disponibles (pour les 2 utilisateurs) sont :
+Installation et lancement du front-end
 
-    http://localhost:3001/guillaumesere_12_06042022/user/12
-    http://localhost:3001/guillaumesere_12_06042022/user/18
+Cloner le présent repo du front-end de SportSee :
+git clone https://github.com/JouenC/SportSee/tree/main/mon-app
+
+En se plaçant dans ce repo du front-end, installer ses dépendances :
+npm install
+
+Lancer le front-end sur le port 3001 :
+npm start
+
+Le front-end est alors consultable à l'URL http://localhost:3001.
+
+L'API de SportSee ne fournit des données que pour les utilisateurs d'id 12 et 18.
