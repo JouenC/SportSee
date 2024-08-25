@@ -1,9 +1,18 @@
-Prérequis
+# SportSee
 
-    NodeJS
-    npm
+## Prérequis
 
-Installation et lancement du back-end
+- NodeJS
+- npm
+
+## Tecnologies
+
+- React
+- React-router
+- React-router-dom
+- recharts
+
+## Installation et lancement du back-end
 
 Cloner le repo du back-end de SportSee :
 git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git
@@ -14,7 +23,7 @@ npm install
 Lancer le back-end sur le port 3001 (port par défaut) :
 npm run start
 
-Installation et lancement du front-end
+## Installation et lancement du front-end
 
 Cloner le présent repo du front-end de SportSee :
 git clone https://github.com/JouenC/SportSee/tree/main/mon-app
