@@ -1,5 +1,5 @@
 // react
-import React from "react";
+import React, {useEffect} from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom"; 
 
 // pages and components
@@ -13,6 +13,12 @@ import Error from "./pages/Error";
 import './css/main.css'
 
 export default function App() {
+  useEffect(() => {
+    let origin = window.localStorage.getItem("origin")
+    if(!origin) window.localStorage.setItem("origin", "api");
+  },
+  []
+  )
     
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>

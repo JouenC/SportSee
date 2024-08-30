@@ -1,5 +1,5 @@
-// import {getUserInfos, getUserActivity, getUserAverageSessions, getUserPerformance} from "./apiCall"
-import {getUserInfos, getUserActivity, getUserAverageSessions, getUserPerformance} from "./dataMockedCall"
+import {getUserInfos, getUserActivity, getUserAverageSessions, getUserPerformance} from "./apiCall"
+import {getUserInfos as getUserInfosMocked, getUserActivity as getUserActivityMocked, getUserAverageSessions as getUserAverageSessionsMocked, getUserPerformance as getUserPerformanceMocked} from "./dataMockedCall"
 
 
  /**
@@ -9,22 +9,22 @@ import {getUserInfos, getUserActivity, getUserAverageSessions, getUserPerformanc
    * @returns {Array}
    */
 
-
 const getData = async (type, id) => {
+  const origin = window.localStorage.getItem("origin")
     let data = [];
 
     switch (type) {
       case "USER_ACTIVITY":
-        data = await getUserActivity(id);
+        data = origin === "api" ? await getUserActivity(id) : await getUserActivityMocked(id);
         break;
       case "USER_PERFORMANCE":
-        data = await getUserPerformance(id);
+        data = origin === "api" ? await getUserPerformance(id) : await getUserPerformanceMocked(id);
         break;
       case "USER_AVERAGE_SESSIONS":
-        data = await getUserAverageSessions(id);
+        data = origin === "api" ? await getUserAverageSessions(id) : await getUserAverageSessionsMocked(id);
         break;
       case "USER_MAIN_DATA":
-        data = await getUserInfos(id);
+        data = origin === "api" ? await getUserInfos(id) : await getUserInfosMocked(id);
         break;
     }
     return data;

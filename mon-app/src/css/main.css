@@ -13,6 +13,7 @@ body {
 
 .users {
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -28,6 +29,17 @@ body {
   text-decoration: none;
   color: red;
   font-size: 40px;
+}
+.users__switch {
+  margin-top: 50px;
+}
+.users__switch__button {
+  color: white;
+  border: none;
+  background-color: red;
+  font-size: 40px;
+  width: 155px;
+  border-radius: 5px;
 }
 
 .user {

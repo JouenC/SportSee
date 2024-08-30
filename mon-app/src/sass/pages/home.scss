@@ -4,15 +4,11 @@ body {
 
 .users {
     display: flex;
+    flex-direction: column;
     flex: 1;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    // position: absolute;
-    // bottom: 240px;
-    // left: 630px;
-    // border: 1px solid black;
 
     &__title {
         font-size: 60px;
@@ -25,5 +21,18 @@ body {
         text-decoration: none;
         color: red;
         font-size: 40px;
+    }
+
+    &__switch {
+        margin-top: 50px;
+
+        &__button {
+            color:white;
+            border: none;
+            background-color: red;
+            font-size: 40px;
+            width: 155px;
+            border-radius: 5px;
+        }
     }
 }
